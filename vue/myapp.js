@@ -1,4 +1,4 @@
-const url = "http://192.168.30.11:5000/me"
+const url = "http://localhost:5000/me"
 var app = new Vue({
   el: '#app',
   data: {
