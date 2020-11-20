@@ -5,9 +5,13 @@ var app = new Vue({
     results: []
   },
   mounted() {
-    axios.get(url).then(response => {
-      this.results = response.data
-    })
+      try{
+        axios.get(url).then(response => {
+        this.results = response.data
+        })
+    }catch(e) {
+        console.error(e)
+    }
   }
 });
 
