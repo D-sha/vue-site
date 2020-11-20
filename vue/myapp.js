@@ -1,9 +1,15 @@
+const url = "127.0.0.1:5000/me"
 var app = new Vue({
   el: '#app',
   data: {
-    message: 'Hello Vue!'
+    results: []
+  },
+  mounted() {
+    axios.get(url).then(response => {
+      this.results = response.data
+    })
   }
-})
+});
 
 var app2 = new Vue({
     el: '#app-2',
@@ -11,4 +17,3 @@ var app2 = new Vue({
       message: 'You loaded this page on ' + new Date().toLocaleString()
     }
   })
-  
