@@ -11,7 +11,9 @@
     <div id="app">
         {{ results.username }}
       </div>
-     
+      <br><br>
+      <li v-for="result in results">
+        {{ result.username }}
 
       <div id="app-2">
         <span v-bind:title="message">
