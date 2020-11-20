@@ -7,7 +7,8 @@
 </head>
 <body>
     <div id="app">
-        {{ results.user}}
+        <li v-for="result of results" :key="result.username">
+        {{result.username}}
       </div>
      
 
