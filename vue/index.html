@@ -9,12 +9,10 @@
 </head>
 <body>
     <div id="app">
-        {{ results.username }}
-      </div>
-      <br><br>
-      <li v-for="result in results">
+        <li v-for="result in results">
         {{ result.username }}
-
+          </li>
+    </div>
       <div id="app-2">
         <span v-bind:title="message">
           Hover your mouse over me for a few seconds
